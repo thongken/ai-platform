@@ -1,0 +1,84 @@
+# Python virtual environments and local package/cache directories
+.venv/
+venv/
+env/
+ENV/
+__pypackages__/
+.cache/
+.python_history
+
+# Python bytecode and tool caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.tox/
+.nox/
+
+# Build, package and coverage artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+*.egg
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+coverage.json
+
+# Secrets and local environment configuration
+.env
+.env.*
+.envrc
+!.env.example
+!.env.sample
+!.env.template
+!.env.*.example
+!.env.*.sample
+!.env.*.template
+*.pem
+*.p12
+*.pfx
+*.key
+credentials.json
+service-account*.json
+token.json
+
+# SQLite databases and their WAL, SHM and journal sidecars
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+*.db
+*.db-*
+
+# Local AI runtime: uploads, metadata, pipeline JSON, results and jobs
+/data/*
+!/data/.gitkeep
+/logs/
+/tmp/
+/temp/
+/uploads/
+/outputs/
+*.log
+*.tmp
+*.temp
+
+# Editor settings, swap files and OS metadata
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Local Jupyter checkpoints
+.ipynb_checkpoints/
