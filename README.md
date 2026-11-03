@@ -133,9 +133,3 @@ Luồng trạng thái: `queued` → `running` → `completed` hoặc `failed`. K
 | `Expected one uploaded file` | Kiểm tra `material_id`, `source_type` và file tương ứng trong `data/uploads/` |
 | Job `failed` | Đọc traceback ở terminal worker; kiểm tra WSL/PHP, Whisper, Gemini và loại tác vụ |
 | Lấy kết quả trả 409 | Kiểm tra trạng thái job; chỉ job `completed` mới lấy được kết quả |
-
-## File nên lưu trong Git
-
-Giữ mã nguồn `app/`, `run-worker.ps1`, `README.md`, `.gitignore` và các file khai báo dependency/cấu hình mẫu khi bổ sung. Bỏ qua `.venv/`, `__pycache__/`, toàn bộ dữ liệu runtime trong `data/`, log, file tạm và cấu hình chứa secret theo [`.gitignore`](.gitignore).
-
-Không ghi API key vào mã nguồn hoặc tài liệu. `.gitignore` chỉ ngăn thêm file mới; file đã được Git theo dõi cần bỏ theo dõi riêng nếu muốn loại khỏi repository.
